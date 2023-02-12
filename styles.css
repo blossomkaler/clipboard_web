@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.header{
+    background: url(/images/bg-header-desktop.png) no-repeat center;
+    background-size: cover;
+    height: 370px;
+  
+}
+
+.header-img{
+    padding-top: 200px;
+}
+.container{
+    display:grid;
+    grid-template-rows: repeat(11,auto);
+    grid-gap: 2rem;
+    width: 100vw;
+}
+
+.box{
+    padding: 2rem 3rem;
+}
+
+.heading-1{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.heading{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 0.5rem;
+}
+.content{
+    color:hsl(201, 11%, 66%);
+    padding-bottom: 2rem;
+    line-height: 1.7rem;
+}
+
+.content-1{
+    padding: 1rem 15rem;
+    color:hsl(201, 11%, 66%);
+    line-height: 1.7rem;
+    font-size: 20px;
+}
+
+.top{
+    padding-top: 0;
+}
+.ios-btn, .mac-btn{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 50px;
+    margin: 0 1rem;
+}
+
+.ios-btn{
+    background-color:hsl(171, 66%, 44%);
+    box-shadow: 5px 5px 5px hsl(171, 73%, 28%);
+} 
+.mac-btn{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 5px 5px 5px hsl(233, 57%, 50%);
+}
+
+.computer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.features{
+    padding: 3rem 3rem;
+}
+
+.features .heading, .features .content{
+    text-align: left;
+}
+
+.devices{
+    padding: 0;
+}
+
+.supercharge{
+    padding-top: 0;
+}
+
+.add-features{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:2rem;
+    padding-bottom: 0;
+}
+
+.icon{
+    padding-bottom: 2.5rem;
+}
+
+.icon img{
+    height:44px;
+}
+
+.companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr); 
+    grid-gap: 1rem
+}
+
+footer{
+    background-color: hsl(210, 27%, 96%) ;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding: 1.5rem 0;
+}
+
+.logo-f img{
+    height:100px ;
+    padding: 0.5rem 0;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 0.5rem 2rem;
+   
+}
+
+.links a{
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    text-align: left;
+}
+.smedia img{
+    padding: 2rem 0.5rem;
+}
+
+footer a:hover{
+    color: hsl(171, 66%, 44%) ;
+}
+
+.smedia :hover{
+    color: hsl(171, 66%, 44%) ;
+}
+
+
+/***************************************************************************************/
+@media only screen and (min-width:615px) and (max-width: 1250px) {
+.content-1{
+    padding: 1rem 5rem;
+}
+.computer{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,auto); 
+    grid-gap:3rem;
+    padding-bottom: 0;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1.5rem;
+    padding-bottom: 0;
+}
+
+.features .heading, .features .content{
+    text-align: center;
+}
+
+}
+
+
+/********************************************************************************************/
+@media only screen and (max-width:615px){
+
+.header{
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: repeat-x;
+    height: 370px;
+}
+    
+.container{
+    grid-gap: 5rem;
+}
+.heading-1{
+    font-size: 80px;
+}
+    
+.heading{
+    font-size: 55px;
+}
+.content{
+    font-size: 38px;
+    padding: 0 3rem;
+    padding-bottom: 2rem;
+    line-height: 2.8rem;
+}
+    
+.content-1{
+    padding: 1rem 2rem;
+    color:hsl(201, 11%, 66%);
+    line-height: 3rem;
+    font-size: 40px;
+}
+
+.header-img{
+    padding: 150px;
+}
+
+.header-img img{
+    height: 180px;
+}
+
+.buttons{
+    padding: 0 3rem;
+}
+
+.ios-btn, .mac-btn{
+    padding:1.5rem 0;
+    text-decoration: none;
+    display: block;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin: 2rem;
+}
+
+.computer{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,auto); 
+    grid-gap:3rem;
+    padding-bottom: 0;
+}
+
+.features{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: auto;
+    grid-gap:1.5rem;
+    padding-bottom: 0;
+}
+    
+.features .heading, .features .content{
+    text-align: center;
+}
+
+.icon img{
+    height: 80px;
+}
+
+.add-features{
+    display: grid;
+    grid-template-rows:repeat(3,auto);
+    grid-template-columns: 1fr;
+    grid-gap:2rem;
+    padding: 0 2rem;
+
+}
+
+.companies{
+    display: grid;
+    grid-template-rows:repeat(5,auto);
+    grid-template-columns: 1fr;
+    grid-gap:5rem;
+
+}
+
+.companies img{
+    height: 70px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 4rem;
+    padding: 4rem;
+}
+
+.logo-f img{
+    height: 150px;
+}
+
+.links{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: repeat(5,auto);
+    grid-gap: 2.5rem;
+   
+}
+.links a{
+    text-align: center;
+    font-size: 38px;
+}
+
+.smedia img{
+    padding :0 2rem;
+    height: 60px;
+}
+
+}
+
