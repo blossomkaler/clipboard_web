@@ -8,7 +8,12 @@
     font-size: 18px;
     text-align: center;
 }
-
+.container{
+    display:grid;
+    grid-template-rows: repeat(11,auto);
+    grid-gap: 2rem;
+    width: 100vw;
+}
 .header{
     background: url(/images/bg-header-desktop.png) no-repeat center;
     background-size: cover;
@@ -18,12 +23,6 @@
 
 .header-img{
     padding-top: 200px;
-}
-.container{
-    display:grid;
-    grid-template-rows: repeat(11,auto);
-    grid-gap: 2rem;
-    width: 100vw;
 }
 
 .box{
@@ -81,6 +80,9 @@
 .computer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.comp-img{
+    margin-left: -5rem;
 }
 
 .features{
@@ -150,10 +152,6 @@ footer{
 }
 
 footer a:hover{
-    color: hsl(171, 66%, 44%) ;
-}
-
-.smedia :hover{
     color: hsl(171, 66%, 44%) ;
 }
 
